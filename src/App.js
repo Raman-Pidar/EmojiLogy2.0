@@ -253,7 +253,7 @@ export default function App() {
   // var meaning = EmojiDectionary.find(
   //   (key) => EmojiDectionary[key] === event.target.value
   // );
-  function txt() {
+  function txt(event) {
     var input = event.target.value;
     console.log("text function run", input, valueList);
     const index = valueList.indexOf(input);
@@ -282,7 +282,7 @@ export default function App() {
       </nav>
 
       <textarea
-        onChange={() => txt()}
+        onChange={(event) => txt(event)}
         placeholder="Search your emoji "
       ></textarea>
 
