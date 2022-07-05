@@ -277,7 +277,12 @@ export default function App() {
     <div className="App">
       <nav>
         <h1>
-          <b>EmojiLogy 😎</b>
+          <b>
+            EmojiLogy{" "}
+            <span role="img" aria-label="emoji">
+              😎
+            </span>
+          </b>
         </h1>
       </nav>
 
@@ -303,7 +308,10 @@ export default function App() {
 
       <footer>
         <p>
-          Confused about Emojis? Well we are here to help😉
+          Confused about Emojis? Well we are here to help
+          <span role="img" aria-label="emoji">
+            😉
+          </span>
           <br />
           Click on the given emojis to find out their meaning or just type for
           the one your are looking for
