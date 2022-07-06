@@ -287,6 +287,7 @@ export default function App() {
       </nav>
 
       <textarea
+        className="container"
         onChange={(event) => txt(event)}
         placeholder="Search your emoji "
       ></textarea>
@@ -294,17 +295,17 @@ export default function App() {
       <h2>{meaning}</h2>
 
       <b style={{ fontFamily: "cursive", fontSize: "150%" }}>Our DataBase</b>
-      <p
-        style={{ backgroundColor: "rgba(3, 211, 248, 0.381", fontSize: "150%" }}
-      >
-        {list.map(function (item) {
-          return (
-            <span onClick={() => emojiClickHandler(item)} key={item}>
-              {item}
-            </span>
-          );
-        })}
-      </p>
+      <div className="dataContainer">
+        <p>
+          {list.map(function (item) {
+            return (
+              <span onClick={() => emojiClickHandler(item)} key={item}>
+                {item}
+              </span>
+            );
+          })}
+        </p>
+      </div>
 
       <footer>
         <p>

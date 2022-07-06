@@ -12,8 +12,7 @@ nav {
   background-color: rgba(255, 255, 0, 0.727);
   padding: 0.5rem;
   margin: 1rem;
-  border-top-left-radius: 50%;
-  border-bottom-right-radius: 50%;
+  border-radius: 5rem 1rem 5rem 1rem;
 }
 
 footer {
@@ -27,11 +26,19 @@ footer {
   text-align: center;
 }
 
-textarea {
-  margin: 2rem;
+.container {
+  margin: 1rem;
   padding: 1rem 2rem;
   height: 5rem;
   width: 40%;
   min-width: 12rem;
-  border-radius: 5%;
+  border-radius: 1rem;
+}
+
+.dataContainer {
+  background-color: rgba(3, 211, 248, 0.381);
+  font-size: 150%;
+  /* height: 40%; */
+  max-height: 12rem;
+  overflow-y: scroll;
 }
