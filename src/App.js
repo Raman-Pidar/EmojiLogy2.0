@@ -291,10 +291,22 @@ export default function App() {
         onChange={(event) => txt(event)}
         placeholder="Search your emoji "
       ></textarea>
+      <br />
 
-      <h2>{meaning}</h2>
+      {meaning && <b className="meaning">Means : {meaning}</b>}
+      <br />
 
-      <b style={{ fontFamily: "cursive", fontSize: "150%" }}>Our DataBase</b>
+      <b
+        style={{
+          fontFamily: "cursive",
+          fontSize: "130%",
+          backgroundColor: "skyblue",
+          borderRadius: "1rem",
+          padding: "0.1rem 0.9rem"
+        }}
+      >
+        Our DataBase
+      </b>
       <div className="dataContainer">
         <p>
           {list.map(function (item) {
